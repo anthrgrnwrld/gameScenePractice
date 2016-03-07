@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		362394E01C8CE89C0008F494 /* Pi2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F21991C78AB1B00106E57 /* Pi2UITests.swift */; };
 		364F217A1C78AB1B00106E57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F21791C78AB1B00106E57 /* AppDelegate.swift */; };
 		364F217C1C78AB1B00106E57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F217B1C78AB1B00106E57 /* ViewController.swift */; };
 		364F217F1C78AB1B00106E57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364F217D1C78AB1B00106E57 /* Main.storyboard */; };
 		364F21811C78AB1B00106E57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364F21801C78AB1B00106E57 /* Assets.xcassets */; };
 		364F21841C78AB1B00106E57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364F21821C78AB1B00106E57 /* LaunchScreen.storyboard */; };
 		364F218F1C78AB1B00106E57 /* Pi2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F218E1C78AB1B00106E57 /* Pi2Tests.swift */; };
-		364F219A1C78AB1B00106E57 /* Pi2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F21991C78AB1B00106E57 /* Pi2UITests.swift */; };
+		364F21A81C78AB6800106E57 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F21A71C78AB6800106E57 /* GameScene.swift */; };
+		364F21AD1C7B7B3C00106E57 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 364F21A91C7B7B3C00106E57 /* blue.png */; };
+		364F21C11C7D199C00106E57 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 364F21BE1C7D199C00106E57 /* green.png */; };
+		364F21C21C7D199C00106E57 /* purple.png in Resources */ = {isa = PBXBuildFile; fileRef = 364F21BF1C7D199C00106E57 /* purple.png */; };
+		364F21C31C7D199C00106E57 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 364F21C01C7D199C00106E57 /* yellow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		364F21951C78AB1B00106E57 /* Pi2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pi2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		364F21991C78AB1B00106E57 /* Pi2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pi2UITests.swift; sourceTree = "<group>"; };
 		364F219B1C78AB1B00106E57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		364F21A71C78AB6800106E57 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		364F21A91C7B7B3C00106E57 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
+		364F21BE1C7D199C00106E57 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		364F21BF1C7D199C00106E57 /* purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purple.png; sourceTree = "<group>"; };
+		364F21C01C7D199C00106E57 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,12 @@
 			children = (
 				364F21791C78AB1B00106E57 /* AppDelegate.swift */,
 				364F217B1C78AB1B00106E57 /* ViewController.swift */,
+				364F21A71C78AB6800106E57 /* GameScene.swift */,
 				364F217D1C78AB1B00106E57 /* Main.storyboard */,
 				364F21801C78AB1B00106E57 /* Assets.xcassets */,
 				364F21821C78AB1B00106E57 /* LaunchScreen.storyboard */,
 				364F21851C78AB1B00106E57 /* Info.plist */,
+				364F21B11C7B7B4700106E57 /* image */,
 			);
 			path = Pi2;
 			sourceTree = "<group>";
@@ -123,6 +135,17 @@
 				364F219B1C78AB1B00106E57 /* Info.plist */,
 			);
 			path = Pi2UITests;
+			sourceTree = "<group>";
+		};
+		364F21B11C7B7B4700106E57 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				364F21A91C7B7B3C00106E57 /* blue.png */,
+				364F21C01C7D199C00106E57 /* yellow.png */,
+				364F21BE1C7D199C00106E57 /* green.png */,
+				364F21BF1C7D199C00106E57 /* purple.png */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +253,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				364F21841C78AB1B00106E57 /* LaunchScreen.storyboard in Resources */,
+				364F21C21C7D199C00106E57 /* purple.png in Resources */,
+				364F21AD1C7B7B3C00106E57 /* blue.png in Resources */,
 				364F21811C78AB1B00106E57 /* Assets.xcassets in Resources */,
+				364F21C31C7D199C00106E57 /* yellow.png in Resources */,
+				364F21C11C7D199C00106E57 /* green.png in Resources */,
 				364F217F1C78AB1B00106E57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364F21A81C78AB6800106E57 /* GameScene.swift in Sources */,
 				364F217C1C78AB1B00106E57 /* ViewController.swift in Sources */,
 				364F217A1C78AB1B00106E57 /* AppDelegate.swift in Sources */,
 			);
@@ -273,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				364F219A1C78AB1B00106E57 /* Pi2UITests.swift in Sources */,
+				362394E01C8CE89C0008F494 /* Pi2UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +510,7 @@
 				364F21A01C78AB1B00106E57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		364F21A11C78AB1B00106E57 /* Build configuration list for PBXNativeTarget "Pi2Tests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +519,7 @@
 				364F21A31C78AB1B00106E57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		364F21A41C78AB1B00106E57 /* Build configuration list for PBXNativeTarget "Pi2UITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +528,7 @@
 				364F21A61C78AB1B00106E57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
