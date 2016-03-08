@@ -13,12 +13,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var sceneView: SKView!
   
-    var scene : GameScene?
+    var scene : GameScene!
     var level = 0
     
     override func viewWillAppear(animated: Bool) {
         
-        scene = GameScene(size: sceneView.bounds.size, level: level)
+        scene = GameScene(level: level)
         sceneView.presentScene(scene)
         
     }
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         //print("\(NSStringFromClass(self.classForCoder)).\(__FUNCTION__) is called!")
         
         level++
-        scene = GameScene(size: sceneView.bounds.size, level: level)
+        scene = GameScene(level: level)
         let transition : SKTransition = SKTransition.pushWithDirection(SKTransitionDirection.Left, duration: 1.0)
         sceneView.presentScene(scene!, transition: transition)
         
@@ -51,11 +51,7 @@ class ViewController: UIViewController {
         
         //print("\(NSStringFromClass(self.classForCoder)).\(__FUNCTION__) is called!")
 
-        guard let _scene = scene else {
-            fatalError("error")
-        }
-        
-        _scene.outputPressButtonLog(1)
+        scene.outputPressButtonLog(1)
         
     }
     
@@ -63,11 +59,7 @@ class ViewController: UIViewController {
         
         //print("\(NSStringFromClass(self.classForCoder)).\(__FUNCTION__) is called!")
 
-        guard let _scene = scene else {
-            fatalError("error")
-        }
-        
-        _scene.outputPressButtonLog(2)
+        scene.outputPressButtonLog(2)
         
     }
 

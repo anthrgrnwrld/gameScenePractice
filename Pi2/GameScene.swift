@@ -8,6 +8,8 @@
 
 import SpriteKit
 
+private let sceneSize = CGSize(width: 375, height: 344)
+
 class GameScene : SKScene {
     
     private var level: Int       //表示するlevel (本プロパティを基にfistAreaの色と記載内容を変更する)
@@ -108,11 +110,11 @@ class GameScene : SKScene {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(size: CGSize, level: Int) {
+    init(level: Int) {
         
         self.level = level
         
-        super.init(size: size)
+        super.init(size: sceneSize)
         
     }
     
